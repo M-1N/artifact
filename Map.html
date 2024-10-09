@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map - [Missing Person's Name] Case</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url(2.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            background-size: 100% 50%;
+            color: rgb(29, 27, 27);
+            padding: 40px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        #main-content {
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        h1 {
+            color: #444;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+
+        }
+        .gallery img {
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            width: 300px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            border-color: #444;
+        }
+        .evidence-caption {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+        footer {
+            background-color: #2d2d2d;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #map {
+            flex: 3;
+            padding: 20px;
+            background-color: white;
+            margin-right: 20px;
+            border-style: double;
+            border-width: 15px;
+        }
+
+
+        #sidebar {
+            flex: 1;
+            background-color: hsl(0, 0%, 100%);
+            padding: 20px;
+            margin-right: 20px;
+            border-style: double;
+            border-width: 15px;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Evidence - Missing Person #102</h1>
+    <p>Exploring the strange and unexplained clues behind the disappearance.</p>
+</header>
+
+<nav>
+    <a href="website.html">Home</a>
+    <a href="blog posts.html">Blog Posts</a>
+    <a href="Evidence.html">Evidence</a>
+    <a href="Map.html">Map</a>
+</nav>
+
+<div id="main-content">
+    <aside id="sidebar">
+        <h3>Related Links</h3>
+        <ul>
+            <li><a href="#">Case Summary</a></li>
+            <li><a href="submittip.html">Submit a Tip</a></li>
+        </ul>
+
+        <h3>Witness Testimonies</h3>
+        <ul>
+            <li><a href="#">Interview with witnesses</a></li>
+            <li><a href="#">Audio Recording of Witness Testimony</a></li>
+        </ul>
+    </aside>
+
+    <section id="map"><div>
+        <a href="map.png"><img src="map.png"></a>
+        <div class="evidence-caption"></div>
+    </div></section>
+        
+    <aside id="sidebar">
+        <p>map indicating </p>
+    </aside>
+</div>
+    
+
+
+
+
+
+
+<footer>
+    <p>&copy; 2Documenting [Missing Person's Name] Disappearance - All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Tip - Missing Case #102</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            background-color: #000000;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url(2.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            background-size: 100% 50%;
+            color: rgb(29, 27, 27);
+            padding: 50px;
+            text-align: center;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: firebrick;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        #main-content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        #form-section {
+            flex: 3;
+            padding: 20px;
+            background-color: white;
+            margin: 20px auto;
+            border-style: double;
+            border-width: 15px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: firebrick;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 15px;
+            text-align: center;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #bb0000;
+        }
+        footer {
+            background-color: #2d2d2d;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Submit a Tip - Missing Case #102</h1>
+</header>
+
+<nav>
+    <a href="website.html">Home</a>
+    <a href="blog posts.html">Blog Posts</a>
+    <a href="Evidence.html">Evidence</a>
+    <a href="Map.html">Map</a>
+
+</nav>
+
+<div id="main-content">
+    <section id="form-section">
+        <h2>Have information? Submit a Tip</h2>
+        <p>If you have any information regarding the disappearance of [Missing Person's Name], please fill out the form below. All submissions are anonymous unless you provide your contact details.</p>
+
+        <form action="/submit-tip" method="POST">
+            <label for="name">Name (Optional):</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+
+            <label for="email">Contact (Optional):</label>
+            <input type="email" id="email" name="email" placeholder="Your contact">
+
+            <label for="location">Location of Tip:</label>
+            <input type="text" id="location" name="location" placeholder="Where did you see or find something?">
+
+            <label for="tip">Your Tip:</label>
+            <textarea id="tip" name="tip" rows="8" placeholder="Describe what you know or saw..." required></textarea>
+
+            <input type="submit" value="Submit Tip">
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy;  Documenting [Missing Person's Name] Disappearance</p>
+</footer>
+
+</body>
+</html>
